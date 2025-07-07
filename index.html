@@ -6,10 +6,12 @@
     <title>Abhi Editz</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="https://kit.fontawesome.com/cfbcb742b4.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div id="header">
-        <div class="container">
+        <div class="container" class="relative">
             <nav>
                 <img class="logo" src="images/logo.png" alt="logo">
                 <ul id="sidemenu">
@@ -24,7 +26,9 @@
             </nav>
             <div class="header-text">
                 <p>Video Editor</p>
-                <h1>Hi, I'm <span>Abhimanyu</span><br> From Gurgaon</h1>
+               <div class="hover-container"> 
+                <h1 class="explosive-text"  >Hi, I'm <span class="shadow-dance-text">Abhimanyu</span><br> From <div class="neon-text">Gurugram</div></h1>
+            </div>
             </div>
         </div>
     </div>
@@ -32,18 +36,22 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
-                    <img src="images/IMG_0921.JPEG" alt="user">
-                </div>
+                
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I’m a video editor with a strong passion for storytelling and visual creativity. Although I'm just starting out, I have a keen eye for detail and a growing skill set in video editing software. I enjoy crafting engaging content — from short clips to cinematic sequences — and constantly experimenting with new techniques. Currently building my portfolio, I’m focused on refining my style and expanding my expertise. I'm eager to collaborate, learn from every project, and bring ideas to life through dynamic and impactful video edits. Every frame tells a story, and I'm excited to create more.</p>
+                   <div class="about-col-2 content v3">
+  <h1 class="sub-title" data-aos="fade-up" data-aos-anchor-placement="center-center">>About Me</h1>
+  
+  <p>
+    I’m a video editor with a strong passion for storytelling and visual creativity. Although I'm just starting out, I have a keen eye for detail and a growing skill set in video editing software. I enjoy crafting engaging content — from short clips to cinematic sequences — and constantly experimenting with new techniques. Currently building my portfolio, I’m focused on refining my style and expanding my expertise. I'm eager to collaborate, learn from every project, and bring ideas to life through dynamic and impactful video edits. Every frame tells a story, and I'm excited to create more.
+  </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
+  <div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+    <p class="tab-links" onclick="opentab('education')">Education</p>
+  </div>
+</div>
+
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Video Shooting</span><br>Video Recording & Shooting</li>
@@ -70,58 +78,60 @@
         </div>
     </div>
 <!-- ------------------services------------------------------ -->
- <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-video"></i>
-                <h2>Cinematic Video Production</h2>
-                <p>High-quality cinematic video shooting for events, ads, and films.</p>
-                <a href="#">learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>Video Editing</h2>
-                <p>High-quality video editing for cinematic, promotional, and social media content.</p>
-                <a href="#">learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-hurricane"></i>
-                <h2>Visual Effects (VFX)</h2>
-                <p>Eye-catching motion graphics, logo animations, and special effects.</p>
-                <a href="https://www.instagram.com/haryana.official_?igsh=MWdyajZ0aWUzaDFkOA%3D%3D&utm_source=qr">learn more</a>
-            </div>
-        </div>
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div data-aos="fade-right" data-aos-delay="500">
+        <i class="fa-solid fa-video" data-aos="flip-right" data-aos-delay="1000"></i>
+        <h2>Cinematic Video Production</h2>
+        <p>High-quality cinematic video shooting for events, ads, and films.</p>
+        <a href="#">learn more</a>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="1000">
+        <i class="fa-solid fa-crop" data-aos="flip-right" data-aos-delay="1500"></i>
+        <h2>Video Editing</h2>
+        <p>High-quality video editing for cinematic, promotional, and social media content.</p>
+        <a href="#">learn more</a>
+      </div>
+      <div data-aos="fade-right" data-aos-delay="1700">
+        <i class="fa-solid fa-hurricane" data-aos="flip-right" data-aos-delay="2200"></i>
+        <h2>Visual Effects (VFX)</h2>
+        <p>Eye-catching motion graphics, logo animations, and special effects.</p>
+        <a href="https://www.instagram.com/haryana.official_?igsh=MWdyajZ0aWUzaDFkOA%3D%3D&utm_source=qr">learn more</a>
+      </div>
     </div>
- </div>
+  </div>
+</div>
+
 <!-- -----------------portfolio-------------- -->
  <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <video width="300" height="500" controls autoplay loop muted>
-                    <source src="images/vid1.MP4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="work">
-                <video width="300" height="500" controls autoplay loop muted>
-                    <source src="images/kitchen.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="work">
-                <video width="300" height="500" controls autoplay loop muted>
-                    <source src="images/phone.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-        <a href="https://www.instagram.com/haryana.official_?igsh=MWdyajZ0aWUzaDFkOA%3D%3D&utm_source=qr" class="btn">See More</a>
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <video width="300" height="500"  loop class="hover-video">
+          <source src="images/vid1.MP4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="work">
+        <video width="300" height="500"  loop class="hover-video">
+          <source src="images/kitchen.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="work">
+        <video width="300" height="500"  loop class="hover-video">
+          <source src="images/phone.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
- </div>
+    <a href="https://www.instagram.com/haryana.official_?igsh=MWdyajZ0aWUzaDFkOA%3D%3D&utm_source=qr" class="btn">See More</a>
+  </div>
+</div>
+
 <!-- -------------------contact-------------- -->
  <div id="contact">
     <div class="container">
@@ -198,6 +208,20 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+    AOS.init();
+    src="https://cdn.tailwindcss.com"
+    const videos = document.querySelectorAll('.hover-video');
+
+  videos.forEach(video => {
+    video.addEventListener('mouseenter', () => {
+      video.play();
+    });
+
+    video.addEventListener('mouseleave', () => {
+      video.pause();
+      video.currentTime = 0; // Optional: resets to start
+    });
+  });
   </script>
 </body>
 </html>
