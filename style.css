@@ -208,17 +208,23 @@ nav ul li a:hover::after{
     padding: 50px 0;
 }
 
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
 }
 
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+.work {
+  flex: 0 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  animation: subtleBounce 5s infinite;
 }
 
 .work img{
@@ -522,4 +528,51 @@ nav .fas{
     100% {
         text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
     }
+}
+
+ .content {
+  margin-bottom: 4em;
+}
+
+.content p {
+  display: inline;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-in-out;
+}
+
+.v3 p {
+  color: transparent;
+  background-position: right;
+  background-size: 100% 100%;
+  background-image: linear-gradient(grey, grey);
+}
+
+.v3:hover p {
+  color: rgb(255, 255, 255);
+  background-size: 0% 100%;
+}
+
+    
+@keyframes subtleBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.work:hover {
+  animation: none;
+  transform: scale(1.05);
+}
+
+/* === Video Play on Hover === */
+.hover-video {
+  pointer-events: none;
+}
+
+.work:hover video {
+  pointer-events: auto;
+  transform: scale(1.03);
 }
